@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bartender</title>
+    <!-- FAVICON = Logo que se muestra en la pestaña del Sitio Web para identificarla-->
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <!-- LINK A CSS -->
+    <link rel="stylesheet" href="./styles/estilos.css">
+</head>
+
+<body>
+    <section class="grid__layout">
+        <!-- fila de logo + nav -->
+        <header>
+            <div class="header__titulo">
+                    <figure  class="text-focus-in">
+                        <a href="index.html">
+                            <img src="./images/logo(mobile).jpg" alt="Imágen tipo logo de la página">
+                            <h1 >The Bartender</h1>
+                        </a>
+                    </figure>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <!-- MENU CON SUBMENU DE PRODUCTOS -->
+                    <li  class="nav__productos">
+                        <a href="./section/productos.html">Productos</a>
+                        <ul>
+                            <li>
+                                <a href="#">Bartools</a>
+                            </li>
+                            <li>
+                                <a href="#">Cocktail Sets</a>
+                            </li>
+                            <li>
+                                <a href="#">Cristalería</a>
+                            </li>
+                            <li>
+                                <a href="#">Mixología</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- FIN MENU CON SUBMENU DE PRODUCTOS -->
+                    <li>
+                        <a href="./section/aprende.html">Aprende más</a>
+                    </li>
+                    <li>
+                        <a href="./section/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="./section/compras.html">Cómo comprar</a>
+                    </li>
+                    <li>
+                        <!-- SEARCH BAR -->
+                        <label for="site-search" class="search__bar">
+                            <input type="search"    id="site-search" name="q" placeholder="Buscar..." required maxlength="30" minlength="10" size="30">
+                            <button>Search</button>
+                        </label>
+                        <!-- CIERRE DEL SEARCH BAR -->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- cierre fila de logo + nav -->
+
+        <!-- INICIO DEL MAIN -->
+        <main>
+            <!-- imágenes tipo slide-->
+            <section class="slide">
+                    <div class="slide-inner">
+                        
+                        <input class="slide-open" type="radio" id="slide-1" 
+                            name="slide" aria-hidden="true" hidden="" checked="checked">
+                        <div class="slide-item">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WtP4_Mu-CWg?controls=0&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+            
+                        <input class="slide-open" type="radio" id="slide-2" 
+                            name="slide" aria-hidden="true" hidden="" >
+                        <div class="slide-item">
+                                <img src="./images/slide1.jpg" alt="Productos y herramientas para Bartender">
+                        </div>
+                        
+                        <input class="slide-open" type="radio" id="slide-3" 
+                            name="slide" aria-hidden="true" hidden="">
+                        <div class="slide-item">
+                                <img src="./images/slide2.jpg" alt="Bartender colando un cóctel">
+                        </div>
+            
+                        <label for="slide-3" class="slide-control prev control-1">‹</label>
+                        <label for="slide-2" class="slide-control next control-1">›</label>
+                        <label for="slide-1" class="slide-control prev control-2">‹</label>
+                        <label for="slide-3" class="slide-control next control-2">›</label>
+                        <label for="slide-2" class="slide-control prev control-3">‹</label>
+                        <label for="slide-1" class="slide-control next control-3">›</label>
+                        
+                        <ol class="slide-indicador">
+                            <li>
+                                <label for="slide-1" class="slide-circulo">•</label>
+                            </li>
+                            <li>
+                                <label for="slide-2" class="slide-circulo">•</label>
+                            </li>
+                            <li>
+                                <label for="slide-3" class="slide-circulo">•</label>
+                            </li>
+                        </ol>
+                    </div>
+            </section>
+            <!-- cierre imágenes tipo slide -->
+
+            <div class="parrafoDescuento">
+            <p>ENVÍOS GRATIS A TODO EL PAÍS PARA PEDIDOS SUPERIORES A $6000</p>
+            </div>
+
+            <!-- SECTION imagenes productos destacados -->
+            <section class="flex__imgdest">
+                <figure>
+                    <img src="./images/jigger.jpg" alt="Jigger, elemento para medir líquidos" width="200px" height="200px">
+                    <figcaption>JIGGERS</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/coctelera.jpg" alt="Coctelra, elemento para batir bebidas" width="200px" height="200px">
+                    <figcaption>COCTELERAS</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/cristal.jpg" alt="Vaso Whisky Facetado" width="200px" height="200px">
+                    <figcaption>CRISTALERÍA</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/mixologia5.jpg" alt="Cóctel en copa Martini" width="200px" height="200px">
+                    <figcaption>MIXOLOGÍA</figcaption>
+                </figure>
+            </section>
+            <!-- cierre SECTION imágenes productos destacados -->
+
+            <!-- inicio del NEWSLETTER -->
+            <section class="newsletter">
+                    <form action="#">
+                        <label for="email">Newsletter <br> 
+                            <input type="email" id="email" placeholder="Ingrese su Email" name="email">
+                        </label>
+                        <input type="submit" value="REGISTRARME" class="newsletter__boton">
+                        <p>Enterate de todas las novedades</p>
+                    </form>
+            </section>
+            <!-- cierre del NEWSLETTER -->
+        </main>
+        <!-- FIN DEL MAIN -->
+        
+        <!-- inicio de FOOTER -->   
+        <footer>
+                <div class="footer__navegacion"><h3>NAVEGACIÓN</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./section/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./section/aprende.html">Aprende más</a>
+                        </li>
+                        <li>
+                            <a href="./section/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./section/compras.html">Cómo comprar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__pagos">
+                    <h3>MEDIOS DE PAGO</h3>
+                    <img src="./images/visa1.png" alt="Ícono de la tarjeta VISA">
+                    <img src="./images/mastercard1.png" alt="Ícono de la tarjeta MASTERCARD">
+                    <img src="./images/amex1.png" alt="Ícono de la tarjeta American Express">
+                    <img src="./images/tarjeta-naranja.png" alt="Ícono de la tarjeta Naranja">
+                    <div>
+                        <img src="./images/tarjeta-shopping.png" alt="Ícono de la tarjeta shopping">
+                        <img src="./images/mercadopago.png" alt="Ícono de Mercado Pago">
+                        <img src="./images/pagofacil.png" alt="Ícono del sistema de pago PAGO FÁCIL">
+                        <img src="./images/rapipago.png" alt="Ícono del sistema de pago RAPIPAGO">
+                    </div>
+                    </div>
+
+                <div class="footer__envios"><h3>MÉTODOS DE ENVÍO</h3>
+                    <img src="./images/oca.png" alt="Ícono sistema de envíos por encomienda OCA">
+                    <img src="./images/mercado-envios.png" alt="Ícono de sistema de envíos por encomienda Mercado Envíos">
+                </div>
+
+                <div class="footer__contacto"><h3>CONTACTO</h3>
+                <img src="./images/email.png" alt="Logo del arroba, para el email"> 
+                <a href="#">thebartender@gmail.com</a>
+                <br>
+                <img src="./images/ubicacion.png" alt="Logo de búsqueda de Ubicación"> 
+                <a href="#">CABA, Palermo</a>
+                </div>
+
+                <div class="footer__redes"><h3>REDES SOCIALES</h3>
+                <img src="./images/instagram.svg" alt="Logo de la red social Instagram">
+                <img src="./images/facebook.svg" alt="Logo de la red social Facebook">
+                <img src="./images/twitter.svg" alt="Logo de la red social Twitter">
+                </div>
+        </footer> 
+        <!-- cierre del FOOTER -->
+    </section>
+</body>
+
+</html>
