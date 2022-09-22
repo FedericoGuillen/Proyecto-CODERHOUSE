@@ -33,9 +33,9 @@
     .text-focus-in{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 0.9s cubic-bezier(.55,.085,.68,.53) both}   
     @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
     .header__titulo figure img{
-        margin: 8px 0px -10px 0px;
         border: 5px double black;
         border-radius: 30px;
+        margin-bottom: 6px;
     }
     .header__titulo figure h1{
         display: inline-block;
@@ -43,6 +43,9 @@
         font-size: 1.875em;
         font-weight: bolder;
         color: black;
+    }
+    .header__titulo figure{
+        margin: 5px 0px 2px 0px;
     }
 
     /* INICIO DEL NAV */
@@ -81,26 +84,32 @@
         border: 3px solid white;
         border-radius: 3px;
     }
-    /* SUBMENU HEADER--PRODUCTOS  */
-    .nav__productos ul{ 
-        position: absolute;
-        display: none;
-        margin-top: 5px;
-        border: 2px solid white;
-        background-color: rgb(0, 0, 33);
+
+    /* BOOTSTRAP NAV BAR */
+    .navbar{
+        padding: 2px 2px 2px 2px;
     }
-    .nav__productos ul li{
-        display: block;
-        text-align: center;
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px 0px 1px 0px;
-        padding: 0px 10px 1px 10px;
-    } 
-    nav ul li:hover ul{
-        display: block;
-    }    
-    /* FIN SUBMENU HEADER--PRODUCTOS */
+    .nav-item{
+        padding-left: 17px;
+    }
+    .nav-link{
+        color: white;
+        transition: all 0.5s;
+    }
+    .nav-link:hover{
+        border-bottom: 3px solid white;
+        color: rgb(101, 101, 101);
+    }
+    .navbar-brand{
+        color: white;
+        transition: all 0.5s;
+        font-weight: bolder;
+    }
+    .navbar-brand:hover{
+        border-bottom: 3px solid white;
+        color: rgb(101, 101, 101);
+    }
+    /* FIN BOOTSTRAP NAV BAR */
 
     /* CIERRE DEL NAV */
     /* CIERRE DEL HEADER */
@@ -252,8 +261,8 @@
 
     /* NEWSLETTER */
     .newsletter{
-        padding: 10px;
-        margin: 15px 10px -6px 10px;
+        margin: 2px;
+        padding: 2px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -265,7 +274,7 @@
     }
     .newsletter label{
         margin: 8px;
-        font-size: 1.875em;
+        font-size: 1.3em;
         text-transform: uppercase;
         font-weight: bolder;
     }
@@ -276,9 +285,10 @@
         border: 2px solid rgb(0, 0, 33);
     }
     .newsletter p{
-        padding: 8px;
+        text-align: center;
         font-weight: bold;
         font-style: italic;
+        margin-right: 100px;
     }
     .newsletter__boton{
         background-color: rgb(0, 0, 33);
@@ -303,14 +313,14 @@
     }
     footer div h3{ 
         color: white;
+        font-size: 1.3em;  
     }
     .footer__navegacion ul{
         list-style-type: none;
     }
     .footer__navegacion ul li a{
         color: whitesmoke;
-    }
-    .footer__navegacion ul li a{
+        margin-right: 28px;
         transition: all 0.5s;
     }
     .footer__navegacion ul li a:hover{
@@ -326,9 +336,8 @@
         margin-top: 0;
     }
     .footer__contacto img{
-        padding-top: 8px;
-        width: 14px;
-        height: 14px;
+        width: 18px;
+        height: 18px;
     }
     .footer__contacto a{
         color: whitesmoke;
@@ -339,6 +348,84 @@
     .footer__contacto a:hover{
         border-bottom: 2px solid white;
         color: rgb(101, 101, 101);
+    }
+    /* ANIMACIONES PARA LINKS REDES SOCIALES */
+    .heartbeat:hover {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+        /**
+    * ----------------------------------------
+    * animation heartbeat
+    * ----------------------------------------
+    */
+    @-webkit-keyframes heartbeat {
+        from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        10% {
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        17% {
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        33% {
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+    }
+    @keyframes heartbeat {
+        from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        10% {
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        17% {
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        33% {
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
     }
     /* FIN DEL FOOTER */
 
@@ -564,6 +651,7 @@
     }
     /* FIN PÁGINA COMPRAS (CÓMO COMPRAR) */
 }/*FIN DEL MOBILE FIRST*/
+
 
 
 /* TABLET/MOBILE 500 PX */
