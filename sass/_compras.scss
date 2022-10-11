@@ -1,0 +1,37 @@
+@media(min-width: 0px){ /*COMPRAS SCSS*/
+    
+    /* PÁGINA COMPRAS (CÓMO COMPRAR) */
+    .flex__compras{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        div{
+            align-items: flex-start;
+            margin-top: 15px;
+            margin-left: 14px;
+            ul{
+                margin: 10px 15px 10px 0px;
+                li{
+                    list-style-type: square;
+                    margin-left: 15px;
+                    margin-top: 5px;
+                }
+            }
+            h3{
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+    }
+    /* declaro área GRIDS para Página de Compras */
+    .grid__layout--compras{
+        display: grid;
+        gap: 7px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    /* FIN PÁGINA COMPRAS (CÓMO COMPRAR) */
+
+}

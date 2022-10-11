@@ -1,0 +1,223 @@
+/* TABLET/MOBILE 500 PX */
+@media(min-width:500px){
+    .grid__layout{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";    
+    }
+    main{
+        margin-top: 12px;
+    }
+    nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    ul{
+        li{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+    }
+    .flex__imgdest{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        figure{
+            img{
+                width: 220px;
+                height: 220px;
+            }
+        }
+    }
+    /* declaro áreas del display para el footer */
+    .footer__navegacion{
+        grid-area: footernav;
+    }
+    .footer__pagos{
+        grid-area: footerpagos;
+    }
+    .footer__envios{
+        grid-area: footerenvios;
+    }
+    .footer__contacto{
+        grid-area: footercontacto;
+    }
+    .footer__redes{
+        grid-area: footerredes;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 124px 95px 74px;
+        gap: 25px;  
+        grid-template-areas:
+        "footernav footercontacto"
+        "footerpagos footerredes"
+        "footerenvios ."
+        ;
+    }
+}/* FIN TABLET/MOBILE 500PX */
+
+/* TABLET 768PX */
+@media(min-width:768px){
+    .grid__layout{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";    
+    }
+    nav{
+        ul{
+            li{
+                margin-left: 15px;
+            }
+        }
+    }
+    .search__bar {
+        input{
+        width: 130px;
+        }
+    }
+    .flex__imgdest{
+        figure{
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        } 
+    } 
+    footer{
+        font-size: 1.063em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 138px 105px;
+        gap: 18px 0px;  
+        grid-template-areas:
+        "footernav footerpagos footerenvios"
+        "footercontacto footerredes none"
+        ;
+    }
+
+    /* PÁGINA PRODUCTO 768 PX */
+    .grid__productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        figure{
+            img{
+                width: 215px;
+                height: 215px;
+            }
+            figcaption{
+                width: 215px;
+            }
+        }
+    }
+    /* FIN PÁGINA PRODUCTO 768PX */
+
+    /* PÁGINA APRENDE MÁS 768 PX */
+    .grid__aprende{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        figure{
+            margin: 20px;
+            img{
+                width: 205px;
+                height: 205px;
+            }
+        }
+    }
+    /* FIN PÁGINA APRENDE MÁS 768 PX */
+
+
+
+
+}/* FIN TABLET 768 PX */
+
+/* NOTEBOOK/ESCRITORIO 1024PX */
+@media(min-width:1024px){
+    nav{
+        ul{
+            li{
+                margin-left: 60px;
+                font-size: 1.25em;
+            }
+        }
+    }
+    .search__bar {
+        input{
+        width: 180px;
+        height: 24px;
+        }
+        button{
+            height: 24px;
+        }
+    }
+    
+    .parrafoDescuento{
+        font-size: 1.5em;
+        word-spacing: 3px;
+    }
+    .flex__imgdest{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        figure{
+            img{
+                width: 280px;
+                height: 280px;
+            }
+        
+        }
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "footernav footerpagos footerenvios footercontacto footerredes";
+    }
+
+    /* PÁGINA PRODUCTOS 1024PX */
+    .grid__productos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        figure{
+            img{
+                width: 270px;
+                height: 270px;
+            }
+            figcaption{
+                width: 270px;
+            }
+        }
+    }
+    /* FIN PÁGINA PRODUCTOS 1024PX */
+
+    
+    /* PÁGINA APRENDE 1024PX */
+    .grid__aprende{
+        align-content: space-between;
+        justify-content: space-evenly;
+        figure{
+            margin: 15px;  
+            img{
+                width: 350px;
+                height: 350px;
+            }  
+        }
+    }
+    /* FIN PÁGINA APRENDE 1024PX */
+}/* FIN NOTEBOOK/ESCRITORIO 1024PX */

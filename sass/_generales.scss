@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Poppins:wght@600&display=swap');
+/*MOBILE FIRST --GENERALES--*/
+@media(min-width: 0px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: whitesmoke;
+        background-image: url(../images/fondobody1.png);
+        text-align: center;
+        font-family: 'IBM Plex Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    a{
+        text-decoration: none;
+    }
+    /* INICIO DEL HEADER */
+    header{
+        background-color: whitesmoke;
+        position: sticky;
+        top: 0;
+        z-index: 200;
+    }
+    .text-focus-in{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 0.9s cubic-bezier(.55,.085,.68,.53) both}   
+    @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+    .header__titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        figure{
+            margin: 5px 0px 2px 0px;
+            img{
+                border: 5px double black;
+                border-radius: 30px;
+                margin-bottom: 6px;
+            }
+            h1{
+                display: inline-block;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.875em;
+                font-weight: bolder;
+                color: black;
+            }
+        }
+    }
+    /* INICIO DEL NAV */
+    nav{
+        background-color: $azul;
+        border: 5px solid $azul;
+        border-radius: 15px;
+        margin-bottom: 0;
+        ul{
+            list-style: none;
+            li{
+                a{
+                    color: $blanco;
+                    font-weight: bold;
+                    transition: all 0.5s;
+                }
+                a:hover{
+                    border-bottom: 3px solid $blanco;
+                    color: rgb(101, 101, 101);
+                }  
+                label{
+                    input{
+                        transition: all 2s;
+                    }
+                    input:hover{
+                        border: 3px solid $blanco;
+                        border-radius: 3px;
+                    }
+                    button{
+                        transition: all 2s;
+                    }
+                    button:hover{
+                        border: 3px solid $blanco;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    /* BOOTSTRAP NAV BAR */
+    .navbar{
+        padding: 2px 2px 2px 2px;
+    }
+    .nav-item{
+        padding-left: 17px;
+    }
+    .nav-link{
+        color: $blanco;
+        transition: all 0.5s;
+    }
+    .nav-link:hover{
+        border-bottom: 3px solid $blanco;
+        color: rgb(101, 101, 101);
+    }
+    .navbar-brand{
+        color: $blanco;
+        transition: all 0.5s;
+        font-weight: bolder;
+    }
+    .navbar-brand:hover{
+        border-bottom: 3px solid $blanco;
+        color: rgb(101, 101, 101);
+    }
+    /* FIN BOOTSTRAP NAV BAR */
+
+    /* CIERRE DEL NAV */
+    /* CIERRE DEL HEADER */
+    
+    /*INICIO DEL MAIN*/
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    /* NEWSLETTER */
+    .newsletter{
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid $azul;
+        border-radius: 15px;
+        background-color: whitesmoke;
+        box-shadow: 7px 7px 7px black;
+        label{
+            margin: 2px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            font-weight: bolder;
+            input{
+                width: 250px;
+            }
+            input:hover{
+                border: 2px solid $azul;
+            }
+        }
+        p{
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            margin-right: 100px;
+        }
+    }
+    .newsletter__boton{
+        background-color: $azul;
+        color: whitesmoke;
+    }.newsletter__boton:hover{
+        color: rgb(101, 101, 101);
+    }
+    /* FIN DEL NEWSLETTER */
+    /* CIERRE DEL MAIN */
+
+    /* FOOTER */
+    footer{
+        height: 100%;
+        padding: 7px;
+        border: 1px solid black;
+        background-color: $azul;
+        align-content: flex-start;
+        justify-content:space-around;
+        div{
+            margin-top: 20px;
+            h3{ 
+                color: $blanco;
+                font-size: 1.3em;  
+            }
+        }
+    }
+    .footer__navegacion ul{
+        list-style-type: none;
+        li{
+            a{
+                color: $blanco;
+                margin-right: 28px;
+                transition: all 0.5s;
+            }
+            a:hover{
+                border-bottom: 2px solid $blanco;
+                color: rgb(101, 101, 101);
+            }
+        }
+    }
+    .footer__pagos img, .footer__envios img{
+        margin: 4px;
+        width: 40px;
+        height: 25px;
+    }
+    .footer__pagos{
+        div{
+            margin-top: 0;
+        }
+    }
+    .footer__contacto{
+        figure{
+            img{
+                width: 18px;
+                height: 18px;
+            }
+            a{
+                color: whitesmoke;
+                transition: all 0.5s;
+            }
+            a:hover{
+                border-bottom: 2px solid $blanco;
+                color: rgb(101, 101, 101);
+            }
+        } 
+    }
+    
+    /* ANIMACIONES PARA LINKS REDES SOCIALES */
+    .heartbeat:hover {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+        /**
+    * ----------------------------------------
+    * animation heartbeat
+    * ----------------------------------------
+    */
+    @-webkit-keyframes heartbeat {
+        from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        10% {
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        17% {
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        33% {
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+    }
+    @keyframes heartbeat {
+        from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        10% {
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        17% {
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+        33% {
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+        45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+    }
+    /* FIN DEL FOOTER */
+
+}

@@ -1,0 +1,47 @@
+@media(min-width: 0px){ /*CONTACTO SCSS*/
+    /* PÁGINA CONTACTO */
+    .flex__contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        form{
+            div{
+                margin-top: 15px;
+                margin-left: 10px;
+                padding: 5px;
+                label{
+                    span{
+                        display: block;
+                        font-weight: bolder;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+        input:hover{
+            border: 2px solid $azul;
+        }
+        textarea:hover{
+            border: 2px solid $azul;
+        }
+    }
+    
+    .flex__contacto--boton{
+        background-color: $azul;
+        color: whitesmoke;
+    }
+    .flex__contacto--boton:hover{
+        color: rgb(101, 101, 101);
+    }
+    /* declaro área de GRIDS para Página de Contacto */
+    .grid__layout--contacto{
+        display: grid;
+        gap: 7px;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* FIN PÁGINA CONTACTO */
+
+}
