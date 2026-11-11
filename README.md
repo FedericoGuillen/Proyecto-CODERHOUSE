@@ -37,6 +37,8 @@ Proyecto-CODERHOUSE/
 ├── sass/
 │   ├── _variables.scss
 │   ├── _generales.scss
+│   ├── _index.scss
+│   ├── _mediaq.scss
 │   ├── _productos.scss
 │   ├── _contacto.scss
 │   ├── _compras.scss
@@ -72,9 +74,10 @@ Monitores de escritorio
 ------------------------------------
 
 🔗 Demo
-GitHub Pages: https://TU-USUARIO.github.io/Proyecto-CODERHOUSE/
 
-Repositorio: https://github.com/TU-USUARIO/Proyecto-CODERHOUSE
+GitHub Pages: https://federicoguillen.github.io/Proyecto-CODERHOUSE/
+
+Repositorio: https://github.com/FedericoGuillen/Proyecto-CODERHOUSE
 
 ------------------------------------
 
@@ -82,4 +85,3 @@ Repositorio: https://github.com/TU-USUARIO/Proyecto-CODERHOUSE
 Federico Nicolás Guillen
 
 Proyecto desarrollado como entrega final para Coderhouse.
-.
